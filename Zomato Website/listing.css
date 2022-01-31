@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+#head{
+    width: 100%;
+    height: 50px;
+    background-color: #e33544;
+    border-bottom: 5px solid gray;
+}
+
+#headtext{
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+#body1{
+    width: 20%;
+    height: 700px;
+    margin-left: 50px;
+    float: left;
+    margin-top: 50px;
+    border: 5px solid gray;
+
+
+}
+
+#body2{
+    width: 70%;
+    height: 900px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.items{
+    width: 27%;
+    height: 300px;
+    float: left;
+    margin-left: 5%;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 20px;
+}
+
+.items>span{
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+}
+
+#footer>span{
+    font-size: 20px;
+    color: white;
+    margin-left: 580px;
+    margin-top: 5%;
+    }
+
+span{
+    font-size: 20px;
+    color: black;
+}
+
+#filter{
+    width: 100%;
+    height:40px;
+    border-bottom: 1px solid gray;
+}
+#filter>span{
+text-align: center;
+color: black;
+opacity: 0.9;
+font-size: 25px;
+margin-left: 100px;
+font-weight: bold;
+margin-top: 50px;
+}
+
+#cuisinefilter{
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+
+#costfilter{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+#cuisinefilter>span{
+    color: black;
+    opacity: 0.9;
+    margin-left: 75px;
+
+}
+
+#costfilter>span{
+    color: black;
+    opacity: 0.9;
+    margin-left: 75px;
+
+}
+
+#footerdiv1{
+    width: 48%;
+    height: 155px;
+    border-right: 2px solid white;
+    float: left;
+    margin-left: 20px;
+}
+
+#footerdiv1>span{
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-left: 200px;
+}
+
+#footerdiv2{
+    width: 45%;
+    height: 155px;
+    margin-left: 650px;
+}
+
+#footerdiv2>span{
+    color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-left: 250px;
+}
+
