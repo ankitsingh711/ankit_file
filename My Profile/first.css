@@ -1,0 +1,198 @@
+body{
+    overflow-x: hidden;
+    margin:0px;
+    padding:0px;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnxRp6K6mIb1MeZIjhqPG9GUAljCVvzE124GJayHCgamdda3QV1jdzqXuMOzXqD2qDuw&usqp=CAU);
+}
+
+.li{
+    color:blue;
+    display: inline;
+    text-decoration: none;
+    margin-top: 10px;
+    margin:5px;
+    transition: 0.5s;
+}
+
+#nb{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    position:relative;
+}
+
+
+#hdr{
+    width: 100%;
+    height: 20px;
+    color: white;
+    opacity: 0.8;
+    
+
+}
+
+
+#bdy{
+    width:100%;
+    height: 500px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#myphoto{
+    width:35%;
+    height:440px;
+    background-image:url(https://www.linkpicture.com/q/ankitsingh.jpeg-removebg-preview-modified.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 10px;
+    background-position-x:40px ;
+    float:left;
+    border: 2px 2px white;
+}
+#bdytext{
+    float: right;
+    width: 60%;
+    height: 180px;
+    color: white;
+    text-align: center;
+    background-position-y: 170px;
+    background-position-x:1000px;
+    margin-top: 200px;
+    margin-right: 30px;
+}
+
+#sml{
+    width: 40%;
+    height: 70px;
+    background-position-x:30px;
+    background-position-y: 200px;
+    color:white;
+}
+
+#smlogo{
+    margin-left: 1030px;
+    margin-top: 370px;
+
+}
+
+.circle{
+    margin-left: px;
+}
+
+#skills{
+    width: 100%;
+    height:  470px;
+    background-color: white;
+    background-repeat: no-repeat;
+
+}
+
+#yt{
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#myc{
+    width: 25%;
+    height: 50px;
+    background-color:white;
+}
+
+.video{
+    float: left;
+    height: auto;
+    margin-top:80px;
+    margin-left: 50px;
+}
+
+#yttext{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color:white;
+    margin-top: 30px;
+    color:black;
+}
+
+#ytxtx{
+    margin-top: 30px;
+}
+
+#mychannellink{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#contacts{
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+#contactbox{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contacttxt{
+    text-align: center;
+    color:#0059FF;
+    background-color:white;
+    border: 5px inset white;
+}
+
+#tbl{
+    width: 40%;
+    height: 450px;
+    float: left;
+    margin-left: 100px;
+    color: white;
+    border: 2px double white;
+}
+
+
+#tbltxt{
+    width: 650px;
+    height:400px ;
+    margin: top 2px;
+}
+
+#ftr{
+    width: 100%;
+    height: 80px;
+    margin-top: 500px;
+    background-color:black;
+    color:black;
+    border-top: 2px solid white;
+
+}
+
+#email{
+margin: 0px;
+padding: 0px;
+
+}
+
+#tble{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.footer{
+    text-align: center;
+    color: black;
+    display: block;
+    font-size: 15px;
+    font-weight: italic;
+    color:white;
+    margin-top: 8px;
+    opacity: 0.9;
+}
