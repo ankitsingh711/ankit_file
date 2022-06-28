@@ -1,0 +1,141 @@
+body{
+    background-color:whitesmoke;
+}
+
+
+
+#mainBox{
+    width: 31rem;
+    height: 32rem;
+    background-color: #ffffff;
+    border-radius: 5%;
+    border: 12px groove #4fcbdd;
+}
+
+#mainBox>span{
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+
+}
+
+#inputBox{
+    width: 17rem;
+    height: 5rem;
+}
+
+.screen{
+    width: 22rem;
+    height: 3rem;
+    outline: none;
+    font-size: 30px;
+    border: 0px;
+}
+
+.button{
+    background-color:#4fcbdd;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    outline: none;
+}
+
+.darkbutton{
+    background-color:black;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.button:hover{
+    transform: scale(1.07);
+}
+
+.button2{
+    background-color:#f3f8fc;
+    border: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 22px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    outline: none;
+}
+
+.button2:hover{
+    transform: scale(1.07);
+}
+
+.button3{
+    background-color:#f3f8fc;
+    border: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 12px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    outline: none;
+}
+
+.button3:hover{
+    transform: scale(1.07);
+}
+
+.button4{
+    background-color:#4fcbdd;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 15rem;
+    height: 3rem;
+    outline: none;
+}
+
+#plusButton{
+    height: 5rem;
+    border-radius: 5%;
+}
+
+#buttonClear{
+    background-color: red;
+    color: white;
+    width: 28rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+}
+
+#heading{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.darkmode{
+    background-color: black;
+    color: white;
+}
+
+#darkbutton{
+    font-size: 20px;
+    outline: none;
+    background-color:black;
+    color: white;
+    border: 0px;
+    margin-top: 40px;
+}
+
+#line{
+    color: #4fcbdd;
+}

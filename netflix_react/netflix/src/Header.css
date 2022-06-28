@@ -1,0 +1,51 @@
+.show>.dropdown-menu {
+    display: block;
+    position: absolute;
+}
+
+.searchicon {
+    float: right;
+    margin-top: -20px;
+    position: relative;
+    pointer-events:none; 
+    top: 26px;
+    left: 8px;
+    color: white;
+    z-index: 2;
+    }
+
+    .extand {
+    width: 2.4%;
+    font-size: 16px;
+    background: #212529;
+    color: white;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    display: hidden;
+}
+.extand:focus {
+    width: 100%;
+    background: white;
+}
+    
+.extand:focus + span{  /*hide icon*/
+        display:none;
+}
+
+.dropdown-toggle{
+    float: right;
+}
+
+.dropdown-item{
+    color:white
+}
+
+.dropdown-item:hover{
+    background-color:black;
+    color:red
+}
+
+
+
+

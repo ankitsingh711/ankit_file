@@ -1,0 +1,102 @@
+
+#backgroundimage{
+    background-image: url(https://www.linkpicture.com/q/image_327.jpg);
+    width: 100%;
+    height: 650px;
+    image-resolution: 0.9;
+}
+
+#netfliximage{
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    filter: brightness(100%);
+    display: inline;
+}
+
+#sign_in{
+    margin-left: 1100px;
+    margin-top: -40px;
+}
+
+#imagetext{
+    width: 730px;
+    height: 300px;
+    margin-left: 400px;
+    margin-top: 150px;
+}
+
+#imagetext>span{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#imagetext>p{
+    font-size: 20px;
+    color: white;
+    margin-right: 45px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#search{
+    width: 600px;
+    height: 50px;
+}
+
+#search2{
+    width: 600px;
+    height: 50px;
+    margin-left: 240px;
+}
+
+#button{
+    width: 150px;
+    height: 40px;
+    margin-left: 1200px;
+    position: absolute;
+    margin-top:35px;
+}
+
+#coupon{
+    width: 650px;
+    height:350px;
+    margin-left: 370px;
+    position: absolute;
+    z-index: 99;
+    background-color: #f84c26;
+    opacity: 2;
+    margin-top: 180px;
+}
+
+#closebutton{
+    border: none;
+    background-color: #f84c26;
+    color: white;
+    font-size: 25px;
+}
+
+#myvideo{
+    position: absolute;
+}
+
+#mytv{
+    background-color: none;
+}
+
+#myvideo2{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+}
+
+#location{
+    background-color: white;
+    color: blue;
+    display: none;
+    height: 30px;
+}
+
+
+

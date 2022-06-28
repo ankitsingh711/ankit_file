@@ -1,0 +1,262 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.darkmode{
+    background-color: black;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 450px;
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    position: absolute;
+}
+
+#zomato{
+    width: 26%;
+    height: 60px;
+    margin-left: 500px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#zomato>span{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 80px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#zomato>span:hover{
+    color: #e33544;
+}
+
+#discovertext{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#discovertext>span{
+    color: white;
+    font-size: 40px;
+    margin-left: 320px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#login{
+    width: 20%;
+    height: 35px;
+    margin-left: 1000px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login>span{
+    color: white;
+    font-size: 17px;
+    margin-left:15px;
+}
+
+#cards:hover{
+    transform: scale(1.07);
+  }
+
+
+#searchbar{
+    width: 54%;
+    height: 50px;
+    margin-left: 325px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+#dropdown{
+    width: 32%;
+    height: 100%;
+    float: left;
+    outline: none;
+}
+
+#drop{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+}
+
+#search{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+#search>input{
+    width: 66%;
+    height: 88%;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+
+
+}
+
+#second{
+width: 100%;
+height: 300px;
+position:absolute;
+margin-top: 450px;
+}
+
+.second1{
+    width: 250px;
+    height: 220px;
+    float: left;
+    border-radius: 5%;
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: 3px 3px 3px gray;
+    text-align: center;
+}
+
+.second1:hover{
+    transform: scale(1.1);
+}
+
+.second1>span{
+    font-size: 20px;
+    color: black;
+    margin-top:200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+}
+
+#collection{
+width: 100%;
+height: 100px;
+position: absolute;
+margin-top: 750px;
+}
+
+#collection>span{
+font-size: 35px;
+margin-left: 100px;
+margin-top: 20px;
+}
+
+#quicksearch{
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    margin-top: 850px;
+}
+
+.quick{
+    width: 28%;
+    height: 180px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: 6px 6px 6px gray;
+    border-radius: 5%;
+}
+
+.quick:hover{
+    transform: scale(1.1);
+}
+
+.quickimage{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.quicktext{
+    width:37% ;
+    height: 60%;
+    float: right;
+    margin-top: 10%;
+}
+
+.quicktext>span{
+    text-align: center;
+    display: inline-block;
+
+}
+
+#footer{
+    width: 100%;
+    height: 430px;
+    background-co;
+}
+
+#myname{
+    width: 100%;
+    height: 30px;
+    margin-top: 340px;
+}
+#myname>span{
+    margin-left: 600px;
+    font-size: 17px;
+}
+
+.footerdivs{
+    float: left;
+    width: 25%;
+    height: 220px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+#zomatoword{
+width: 100%;
+height: 50px;
+position: absolute;
+margin-top: 15px;
+}
+
+#zomatoword>span{
+margin-left: 50px;
+font-size: 40px;
+font-weight: bold;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.footerdivs>span{
+color: black;
+font-size: 23px;
+margin-left: 50px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.footerdivs>p{
+margin-left: 70px;
+font-size: 15px;
+}
+
+#coupon{
+    width: 500px;
+    height: 320px;
+    background-color: #ca172c;
+    margin-left: 450px;
+    position: absolute;
+    z-index: 180;
+    margin-top: 75px;
+}
+
+#closebutton{
+    background-color: #ca172c;
+    border: none;
+    color: white;
+    font-size: 23px;
+}
+
+
+

@@ -4,186 +4,462 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing Page</title>
+    <title>Zomato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="icon" href="http://assets.stickpng.com/images/602e65f27b5b5700048a4aa4.png">
-    <link rel="stylesheet" href="listing.css">
     <link rel="stylesheet" href="listingitem.html">
     <link rel="stylesheet" href="listingitem.css">
+    <script src="https://kit.fontawesome.com/e76072a7dc.js" crossorigin="anonymous"></script>
+
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+
+      #cards:hover{
+        transform: scale(1.07);
+      }
+  </style>
 </head>
 <body>
-    <header>
-        <div id="head">
-         <span id='headtext'> Zomato</span>
-        </div>
-    </header>
-     <div id="body1">
-        <div id="filter">
-            <span>Filter</span>
-        </div>
-        <div id="cuisinefilter">
-            <span> Cuisine Filter</span><br>
-            <input type="radio">All <br>
-            <input type="radio">North Indian<br>
-            <input type="radio">South Indian<br>
-            <input type="radio">Chinese<br>
-            <input type="radio">Fast Food <br>
-            <input type="radio">Street Food<br>
-        </div>
-        <div id="costfilter">
-           <span> Cost Filter </span><br>
-           <input type="radio">All <br>
-            <input type="radio">100-300<br>
-            <input type="radio">301-500<br>
-            <input type="radio">501-700<br>
-            <input type="radio">701-1000<br>
-            <input type="radio">1001-3000<br>
-        </div>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light display-font-size-20px" href="home.html"><b> Zomato </b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#footer">About</a>
+              </li>
+              
+                <li class="nav-item">
+                <a class="nav-link text-light" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex mx-lg-5">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            <button type="button" class="btn btn-light mx-2" data-bs-toggle="modal" data-bs-target="#modal">
+                Log In
+              </button>
 
-     </div>
-     <div id="body2">
-        <div class="items" >
-            <img  src="https://akm-img-a-in.tosshub.com/sites/dailyo/fb_feed_images/story_image/201908/fb-2_080319011516.jpg" alt="briyani" width="100%" height="170px"> 
-            <span>Briyani(per plate)</span><br>
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-            <strike style="color:red">Rs.300</strike> <span>Rs.250 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span><a href="listingitem.html">Checkout</a></span>
+              <!-- modal  -->
+              <div id="modal" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Log In</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text">
+                                  Must be 8-20 characters long.
+                                </span>
+                              </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign Up</button>
+                      <button type="button" class="btn btn-primary">Log In</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-light mx-2" data-bs-toggle="modal" data-bs-target="#modal2">
+                Sign Up
+              </button>
+
+              <!-- modal  -->
+              <div id="modal2" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Sign Up</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Create Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text">
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="col-auto">
+                                          <span id="passwordHelpInline" class="form-text">
+                                  Must be 8-20 characters long.
+                                </span>
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Other</option>
+                              </select>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Log In</button>
+                      <button type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
         </div>
-        <div class="items">
-            <img src="https://b.zmtcdn.com/data/pictures/chains/2/19288072/55628a209cb2823bf398176ae2193569.jpg" alt="dosa" width="100%">
-            <span>Dosa(per plate)</span><br>
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-            <strike style="color:red">Rs.200</strike> <span>Rs.150 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">900 Ratings</span>
+      </nav>
+      
+
+      
+
+
+     
+
+      <!-- filter starts  -->
+
+
+      <div class="container-sm float-start" style="width: 18rem;height: 80rem;">
+
+        <div>
+            <span class="text-danger fw-bold text-center">Filter</span> <hr>
         </div>
-        <div class="items">
-            <img src="https://b.zmtcdn.com/data/reviews_photos/c26/c90a5b5517e9ce966e41c038db98dc26_1627750887.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="chaat" width="100%" height="170px">
-            <span>Chhola(per plate)</span><br>
-            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+        <div>
+            <span> Cuisine Filter</span><br><br>
+            <input type="radio" name="cuisinefilter" value="All">All <br>
+            <input type="radio" name="cuisinefilter" value="North Indian">North Indian<br>
+            <input type="radio" name="cuisinefilter" value="South Indian">South Indian<br>
+            <input type="radio" name="cuisinefilter" value="Chinese">Chinese<br>
+            <input type="radio" name="cuisinefilter" value="Fast Food">Fast Food <br>
+            <input type="radio" name="cuisinefilter" value="Street Food">Street Food<br>
+        </div> <br> <hr>
+
+        <div>
+            <span> Cost Filter </span><br><br>
+            <input type="radio" name="costfilter" value="All">All <br>
+             <input type="radio" name="costfilter" value="100-300">100-300<br>
+             <input type="radio" name="costfilter" value="301-500">301-500<br>
+             <input type="radio" name="costfilter" value="501-700">501-700<br>
+             <input type="radio" name="costfilter" value="701-1000">701-1000<br>
+             <input type="radio" name="costfilter" value="1001-3000">1001-3000<br>
+         </div> 
+
+      </div>
+
+
+      <!-- card starts -->
+
+      <div class="container">
+        
+        <div id="cards" class="card shadow p-3 mb-5 bg-body rounded float-start" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/2/19288072/55628a209cb2823bf398176ae2193569.jpg" class="card-img-top" alt="Food">
+            <div class="card-body">
+              <h5 class="card-title">Dosa</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
             <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
             <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
             <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
             <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
             <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">2K+ Ratings</span>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="listingitem.html" class="btn btn-primary ">Order</a>
             </div>
-            <div class="items">
-                <img src="https://b.zmtcdn.com/data/pictures/chains/8/2301668/19fcc09f99cc6b53de326fdd30f3a3a0.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="samosha" width="100%" height="170px">
-                <span>Samosha(2 Pcs)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.120</strike> <span>Rs.100 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">1K+ Ratings</span>
-            </div>    
+          </div>
 
-            <div class="items">
-                <img src="https://b.zmtcdn.com/data/pictures/chains/0/18944810/393c42c7e71a853a7b27c164e6682e09_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="burger" width="100%" height="170px">
-                <span>Burger(1 Pc)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.270</strike> <span>Rs.250 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">1.5K+ Ratings</span>
-            </div>    
+          <div id="cards" class="card shadow p-3 mb-5 bg-body rounded mx-10 float-start" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/reviews_photos/c26/c90a5b5517e9ce966e41c038db98dc26_1627750887.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Spicy Chaat</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.150</strike> <span>Rs.100 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
 
-            <div class="items">
-                <img src="https://b.zmtcdn.com/data/pictures/chains/9/19268639/fe8c80fa162c790264a597b45e7e6580.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="burger" width="100%" height="170px">
-                <span>Pizza(1 Pc)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.200</strike> <span>Rs.150 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">1.2K+ Ratings</span>
-            </div>    
+          <div id="cards" class="card shadow p-3 mb-5 bg-body rounded mx-10" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/8/2301668/19fcc09f99cc6b53de326fdd30f3a3a0.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Samosha</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.120</strike> <span>Rs.80 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
 
-            <div class="items">
-                <img src="https://www.manjulaskitchen.com/wp-content/uploads/chilli_paneer.jpg" alt="chilli paneer" width="100%" height="170px">
-                <span>Chilli Paneer(per plate)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.300</strike> <span>Rs.250 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">500 Ratings</span>
-            </div>    
 
-            <div class="items">
-                <img src="https://b.zmtcdn.com/data/pictures/chains/1/19493851/14f30cf31b88fa981d804a536951ae07.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="chauming" width="100%" height="170px">
-                <span>Chauming(per plate)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.150</strike> <span>Rs.100 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">1K+ Ratings</span>
-            </div>    
+          <div id="cards" class="card shadow p-3 mb-5 bg-body rounded mx-10 float-start" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/0/18944810/393c42c7e71a853a7b27c164e6682e09_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Buzz Burger</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
+
+
+          
+          <div id="cards" class="card shadow p-3 mb-5 bg-body rounded mx-10 float-start " style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/9/19268639/fe8c80fa162c790264a597b45e7e6580.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Pizza(1Pc)</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
+
+          <div id="cards"  class="card shadow p-3 mb-5 bg-body rounded mx-10 " style="width: 18rem;">
+            <img src="https://www.manjulaskitchen.com/wp-content/uploads/chilli_paneer.jpg" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Chilli Paneer(1 Plate)</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
+
+         
+          <div id="cards"  class="card shadow p-3 mb-5 bg-body rounded mx-10 float-start" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/1/19493851/14f30cf31b88fa981d804a536951ae07.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Chinese Noodles</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
+
+        </div>
+            
+             
 
             
-            <div class="items">
-                <img src="https://b.zmtcdn.com/data/pictures/0/19495050/d5fb6fd12367b4f3a47ae4e49b6137d5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="rasogoola" width="100%" height="170px">
-                <span>Rasogoola(4 pcs)</span><br>
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
-                <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
-                <strike style="color:red">Rs.350</strike> <span>Rs.300 Only</span><br>
-            <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
-            <span style="font-size: 12px;color: blue;margin-left: 80px;">5K+ Ratings</span>
-            </div>    
+          <div id="cards"  class="card shadow p-3 mb-5 bg-body rounded mx-10 float-start" style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/0/19495050/d5fb6fd12367b4f3a47ae4e49b6137d5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Rasogoola</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
+          </div>
 
-
-
-                
-        
-        
+          
+          <div id="cards"  class="card shadow p-3 mb-5 bg-body rounded mx-10 " style="width: 18rem;">
+            <img src="https://b.zmtcdn.com/data/pictures/2/19561322/0d3d5ecd551169d3f5b752d288553b0b.png?fit=around|771.75:416.25&crop=771.75:416.25;*,*" class="card-img-top" alt="Food" height="170px">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Briyani</h5>
+              <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://image.flaticon.com/icons/png/512/130/130188.png" alt="star" width="30px">
+            <img src="https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg" alt="star" width="27px"><br>
+            <strike style="color:red">Rs.100</strike> <span>Rs.70 Only</span><br>
+              <span style="font-size: 15px;color:green;">Trusted By Many Customers</span><br>
+              <a href="#" class="btn btn-primary ">Order</a>
+            </div>
      </div>
-     <footer>
-         <div id="footer">
-            <span>&copy; 2022 Ankit Developer</span><hr style="color:white;">
-            <div id="footerdiv1">
-                <span>Contact Us</span><br><br>
-                <span style="margin-left: 100px;font-size: 15px;">Email:itsankitsinghbusiness@gmail.com</span><br><br>
-                <span style="margin-left: 180px;font-size: 15px;">6th Floor</span><br>
-                <span style="margin-left: 140px;font-size: 15px;">Street Building Number 2</span>
+
+
+
+            <!-- footer starts  -->
+
+
+        
+        <footer id="footer" class="text-center text-lg-start bg-light text-muted my-500">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block text-align-center">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+    
+              <!-- Right -->
+              <div>
+                <a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100004977828705" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://twitter.com/ItsAnkit5ingh" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://www.youtube.com/itsankitsingh" class="me-4 text-reset">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://www.instagram.com?itssankitsingh" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://www.linkedin.com/in/ankit-singh-422980227/" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a style="text-decoration: none;" href="https://github.com/ankitsingh711" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+    
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Zomato(Ankit)
+                    </h6>
+                    <p>
+                      The best food delievering company in the world as your best and tasty fresh foods at your door in just a few minutes when you order something from zomato.
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Main Branches
+                    </h6>
+                    <p>
+                      <span class="text-reset form-control-sm">Chennai</span>
+                    </p>
+                    <p>
+                      <span class="text-reset form-control-sm">Kolkata</span>
+                    </p>
+                    <p>
+                      <span class="text-reset form-control-sm">Pune</span>
+                    </p>
+                    <p>
+                      <span class="text-reset form-control-sm">Bengaluru</span>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Help</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New Delhi,India</p>
+                    <p>
+                      <i class="fas fa-envelope me-3"></i>
+                      info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+    
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2022 Copyright Ankit Developer:
+              <a class="text-reset fw-bold" href="https://zomato.com/">Zomato.com</a>
             </div>
-            
-            <div id='footerdiv2'>
-                <span>City We Deliever</span>
-                <ul style="margin-left: 250px;color: white;">
-                    <li>Lucknow</li>
-                    <li>New Delhi</li>
-                    <li>Mumbai</li>
-                    <li>Kolkata</li>
-                    <li>Agra</li>
-                    <li>Pune</li>
-                </ul>
-            </div>
-         </div>
-     </footer>
+            <!-- Copyright -->
+          </footer>
+     
 </body>
 </html>

@@ -1,0 +1,42 @@
+#cards{
+    background-color: #ffffff;
+    margin:0%;
+    padding:0%;
+    margin-left:160px;
+    box-shadow: 0px 5px 5px white 
+}
+
+#cards:hover{
+    transform: scale(1.02);
+}
+
+#heads2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title{
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#head{
+    color: red;
+    text-align: center;
+}
+
+#btn{
+    color:red;
+    width:8rem
+}
+
+span{
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-flex;
+}
+
+#h4{
+    color:red;
+    margin-left: 20px;
+}
