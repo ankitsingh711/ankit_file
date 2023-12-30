@@ -21,6 +21,7 @@ background-color: #0079bf;
 
 
 
+
 #header>span{
     font-family: 'Roboto Serif';
 }
@@ -172,18 +173,9 @@ color: white;
     from {margin-left: 0px;}
     to {margin-left: 890px;}
 }
-.skillslogo{
-    display: inline;
-    margin-left: 20px;
-}
 
-.skillsimage:hover{
-    transform: scale(1.07);
-}
 
-#progress{
-    text-align: center;
-}
+
 
 #youtubevideo{
     display: inline;
@@ -203,12 +195,18 @@ color: white;
     animation: clickmoving 5s infinite;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-left: 400px;
+    margin-left: 180px;
 }
 
 #project{
     text-align: center;
 }
+
+#zom:hover{
+    border-radius: 3%;
+    border: 2px solid #0079bf;
+}
+
 
 #click{
     text-align: center;
@@ -396,9 +394,20 @@ margin-bottom: 10px;
     font-size:50px;
 }
 
-p{
-    color: #df3232;
-}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color:#0079bf;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid white;
+    }
+
+
+
 
 
 

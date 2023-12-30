@@ -1,7 +1,17 @@
 import React, { Component, Fragment } from 'react';
 import { Link,withRouter} from 'react-router-dom';
 import './Header.css';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete, { createFilterOptions } from '@material-ui/lab/Autocomplete';
 
+
+
+const filterOptions = createFilterOptions({
+    matchFrom: 'start',
+    stringify: option => option,
+});
+
+const myOptions = ['6 underground', 'The Conjuring', 'Alive', 'Pihu', '2012', 'Hell Boy', 'Okja', 'RRR', 'Red Notice', 'Raw', 'Avengers', 'Zombieland Doubletap', 'The Jungle Book', 'Choose or Die', 'Article 15', 'Venom', '83', 'Special 26', 'Padman', 'Mary Kom'];
 
 class Header extends Component{
 
@@ -12,6 +22,9 @@ class Header extends Component{
             userData:'',
         }
     }
+    
+
+    
 
 
     handleLogout = () => {
@@ -24,6 +37,7 @@ class Header extends Component{
 
 
     render(){
+
         return(
 
             <Fragment>
@@ -85,7 +99,16 @@ class Header extends Component{
                                         <form className="back mx-4 text-dark">
                                             <span className="fa fa-search searchicon" aria-hidden="true"> 
                                             </span>
-                                            <input type="text" name="search" class="extand float-end"/>
+                                            <Autocomplete
+                                            style={{ width: 350,height:"30px",backgroundColor:"white",marginRight:"30px",outline:"none"}}
+                                            freeSolo
+                                            filterOptions={filterOptions}
+                                            options={myOptions}
+                                            renderInput={(params) => (
+                                            <TextField {...params}
+                                            />
+                                            )}
+                                            />
                                         </form>
 
                                     

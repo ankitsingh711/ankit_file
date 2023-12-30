@@ -62,7 +62,10 @@ const listWeb = ({ webData }) => {
     });
     }else{
         return(
-            <div class="loader"></div>
+            <Fragment>
+                <div class="loader"></div><br/>
+                <div className="container text-light text-bold" style={{marginLeft:"600px"}}><h4>Loading...</h4></div>
+            </Fragment>
         )
     }
 };

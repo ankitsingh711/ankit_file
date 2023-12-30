@@ -8,30 +8,16 @@
     margin-top: -20px;
     position: relative;
     pointer-events:none; 
-    top: 26px;
+    top: 28px;
     left: 8px;
     color: white;
     z-index: 2;
     }
 
-    .extand {
-    width: 2.4%;
-    font-size: 16px;
-    background: #212529;
-    color: white;
-    background-repeat: no-repeat;
-    -webkit-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out;
-    display: hidden;
-}
-.extand:focus {
-    width: 100%;
-    background: white;
-}
-    
-.extand:focus + span{  /*hide icon*/
-        display:none;
-}
+    .Autocomplete{
+        background-color: white;
+    }
+
 
 .dropdown-toggle{
     float: right;

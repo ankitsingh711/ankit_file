@@ -26,7 +26,7 @@ class PremiumDisplay extends Component{
                             <h5 className="card-text text-light">
                             Now You can Watch Movies,Webseries and Tvshows 
                             </h5>
-                            <Link style={{backgroundColor:"red",color:"white"}} to="/home" className='btn'>Let's Start</Link> 
+                            <Link style={{backgroundColor:"red",color:"white"}} to="/whoseWatching" className='btn'>Let's Start</Link> 
                         </div>
                         </div>
                     </div>

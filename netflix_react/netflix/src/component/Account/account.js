@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Header from '../../Header'
 import './account.css'
-import { Link } from 'react-router-dom';
 
 const url = "https://netflix-logins.herokuapp.com/api/auth/userInfo"
 
@@ -22,10 +21,10 @@ class Account extends Component{
     handleName = () => {
         if(this.state.userData.name || sessionStorage.getItem('uName') !==null ){
             if(sessionStorage.getItem('uName') !==null){
-                let name = sessionStorage.getItem('uName')
-                let email = sessionStorage.getItem('uEmail')
-                let role = sessionStorage.getItem('uRole')
-                let phone = sessionStorage.getItem('uPhone')
+                // let name = sessionStorage.getItem('uName')
+                // let email = sessionStorage.getItem('uEmail')
+                // let role = sessionStorage.getItem('uRole')
+                // let phone = sessionStorage.getItem('uPhone')
                 return(
                     <>
                         <h5 className="my-2 mx-2">Name: <span style={{color:"red",fontSize:"17px",fontWeight:"bold"}}>Ankit Singh</span></h5>
@@ -57,10 +56,11 @@ class Account extends Component{
                 <Header/>
                 <div style={{height:"100%",width:"100%"}} className="container-fluid bg-light">
                     <h1 className="text-dark">Account Membership
-                    <Link to="/membership" className="btn mx-3" style={{color:"white",backgroundColor:"red"}}>Add Membership<i className="fa-solid fa-add"></i></Link></h1><hr style={{color:"black"}}/>
+                    <button className="btn mx-3" disabled style={{color:"white",backgroundColor:"red"}}> Membership Active</button></h1><hr style={{color:"black"}}/>
+                    
                     {this.handleName()}
 
-                    <img src="https://ih1.redbubble.net/image.618427277.3222/flat,800x800,075,f.u2.jpg" className="img-fluid" style={{marginLeft:"550px",marginBottom:"300px"}}  width="10%"/>
+                    <img src="https://ih1.redbubble.net/image.618427277.3222/flat,800x800,075,f.u2.jpg" className="img-fluid" style={{marginLeft:"550px",marginBottom:"300px"}}  width="10%" alt="img"/>
                     <h5 style={{marginLeft:"530px",fontWeight:"bold",fontFamily:"serif"}} className="text-dark"> &copy; Ankit Singh Dveloper 2022 </h5>
                 </div>
             </Fragment>

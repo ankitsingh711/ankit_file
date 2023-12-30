@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from "react";
 import './secondPage.css'
 import Header from "../../Header";
+import { Link } from "react-router-dom";
 import WebDisplay from './webDisplay';
 
 const url="https://ankit-netflix.herokuapp.com/webseries"
@@ -28,6 +29,8 @@ class Webseries extends Component{
                         </video>
                         <div className="card-img-overlay my-5">
                             <h1 className="card-title" style={{fontWeight:"bold"}}>Wonderful Nature</h1>
+                            <Link to="/playweb" className="btn btn-light"><i class="fa-solid fa-play mx-2"></i>Play</Link>
+                            <Link to="/mylist" className="btn btn-light mx-3"><i class="fa-solid fa-plus mx-2"></i>Add to List</Link>
                             <h5 className="card-text my-3">
                                 This is the Beautiful nature view watch Movies on a click on the best OTT platform Netflix. 
                             </h5>

@@ -4,7 +4,9 @@ import "./secondPage.css";
 import Footer from '../../Footer'
 import HoverVideoPlayer from 'react-hover-video-player';
 
+
 const MovieDisplay = (props) => {
+
 const Movielist = ({ DataMovie }) => {
     if (DataMovie) {
     return DataMovie.map((item) => {
@@ -33,13 +35,17 @@ const Movielist = ({ DataMovie }) => {
                                 <h4 style={{color:"white"}} class="card-title mx-5">Type: <span className="text-light">{item.movie_type}</span></h4>     
                                 <h5 style={{color:"white"}} class="card-title mx-5">Duration: <span className="text-light">{item.duration}</span></h5>                  
                                 <div className="overlay">
-                                <Link
-                                to="/mylist" className="btn" type="button" id="over2">
+                                <button
+                                onClick={() => {this.addMovie(item.movie_id)}}
+                                to="/mylist"
+                                className="btn"
+                                type="button"
+                                id="over2">
                                 <i 
                                 className="fa-solid fa-add" 
                                 style={{ fontSize: "20px" }}>
                                 </i> 
-                                Add To Mylist</Link>  
+                                Add To Mylist</button>  
 
                                 <Link
                                 to={`/playmovie?movieId=${item.movie_id}`} type="button" className="btn" id="over1">
@@ -59,7 +65,10 @@ const Movielist = ({ DataMovie }) => {
     }
     else{
         return(
-            <div class="loader"></div>
+            <Fragment>
+                <div class="loader"></div><br/>
+                <div className="container text-light text-bold" style={{marginLeft:"600px"}}><h4>Loading...</h4></div>
+            </Fragment>
         )
     }
 };

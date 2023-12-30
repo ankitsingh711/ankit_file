@@ -25,7 +25,10 @@ const PremDisplay = (props) => {
         }
         else{
             return(
-                <div style={{marginTop:"200px"}} class="loader"></div>
+                <Fragment>
+                <div style={{marginTop:"200px"}} class="loader"></div><br/>
+                <div className="container text-light text-bold" style={{marginLeft:"600px"}}><h4>Loading...</h4></div>
+            </Fragment>
             )
         }
     };

@@ -1,0 +1,58 @@
+[
+    {
+    "location_id":"62465b671ad63078ab82dbdb",
+    "location_name" : "Ashok Vihar Phase 3, New Delhi",
+    "state_id" : 1,
+    "state" : "Delhi",
+    "country_name" : "India"
+},
+{
+    "location_id":"62465b671ad63078ab82dbdc",
+    "location_name" : "Bibvewadi, Pune",
+    "state_id" : 2,
+    "state" : "Maharashtra",
+    "country_name" : "India"
+},
+{
+    "location_id" : "62465b671ad63078ab82dbdd",
+    "location_name" : "Jeevan Bhima Nagar, Bangalore",
+    "state_id" : 3,
+    "state" : "Karnataka",
+    "country_name" : "India"
+},
+{
+    "location_id" : "62465b671ad63078ab82dbde",
+    "location_name" : "Sector 40, Chandigarh",
+    "state_id" : 4,
+    "state" : "Punjab",
+    "country_name" : "India"
+},
+{
+    "location_id" : "62465b671ad63078ab82dbdf",
+    "location_name" : "Ashok Vihar Phase 3, New Delhi",
+    "state_id" : 1,
+    "state" : "Delhi",
+    "country_name" : "India"
+},
+{
+    "location_id" : "62465b671ad63078ab82dbe0",
+    "location_name" : "Bibvewadi, Pune",
+    "state_id" : 2,
+    "state" : "Maharashtra",
+    "country_name" : "India"
+},
+{
+    "location_id" :"62465b671ad63078ab82dbe1",
+    "location_name" : "Jeevan Bhima Nagar, Bangalore",
+    "state_id" : 3,
+    "state" : "Karnataka",
+    "country_name" : "India"
+},
+{
+    "location_id" : "62465b671ad63078ab82dbe2",
+    "location_name" : "Sector 40, Chandigarh",
+    "state_id" : 4,
+    "state" : "Punjab",
+    "country_name" : "India"
+}
+]

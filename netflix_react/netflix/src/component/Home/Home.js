@@ -13,19 +13,19 @@ class Home extends Component{
         return(
             <Fragment>
                 <div id="backgroundimage" className="container-fluid d-flex" style={{ borderBottom:" 8px solid #222",position:"absolute" }} />
-                <div id="netfliximage" className="container my-3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflix" width="150px" />
+                <div id="netfliximage" className="container">
+                    <img className='my-2' src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflix" width="150px" />
                 <div/>
                 <div id="sign_in" className='container'>
-                        <Link to="/"  style={{width: "7rem"}} type="button" className="btn btn-outline-light dropdown-toggle mx-3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <Link to="/login" type="button" className="btn btn-danger" style={{backgroundColor:"red",fontSize:"16px"}}>Sign In</Link>
+                </div>
+                <Link to="/"  style={{width: "7rem",marginTop:"-35px"}} type="button" className="btn btn-outline-light dropdown-toggle mx-3" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-globe"></i>English
                         </Link>
                         <ul class="dropdown-menu">
                         <li><Link to="/" class="dropdown-item" >English</Link></li>
                         <li><Link to="/" class="dropdown-item" href="#">Hindi</Link></li>
                         </ul>
-                        <Link to="/login" type="button" className="btn btn-danger" style={{backgroundColor:"red",fontSize:"16px"}}>Sign In</Link>
-                    </div>
                     <div id="imagetext" className="container-fluid ">
                         <span>Unlimited Movies,TV </span><br/>
                             <span style={{marginLeft: "70px"}}>shows and more.</span><br/>

@@ -11,8 +11,8 @@ function changeMode(){
     mybody.classList.toggle('darkmode')
 }
 
-const cityUrl = "https://zomatoajulypi.herokuapp.com/location";
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
+const cityUrl = "https://ankit-zomato.herokuapp.com/location";
+const restUrl = "https://ankit-zomato.herokuapp.com/restaurant?stateId="
 
 const getCity = async() => {
     let response = await fetch(cityUrl)

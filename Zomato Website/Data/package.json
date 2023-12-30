@@ -1,0 +1,20 @@
+{
+  "name": "zomato",
+  "version": "1.0.0",
+  "description": "This is my one of the project which i am working right now.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node location.json",
+    "dev": "nodemon location.json"
+  },
+  "keywords": [
+    "node",
+    "ankit",
+    "singh"
+  ],
+  "author": "Ankit Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
